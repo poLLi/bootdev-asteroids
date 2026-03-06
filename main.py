@@ -56,6 +56,7 @@ def main():
                 if obj.collides_with(shot):
                     log_event("asteroid_shot")
                     obj.split()
+                    shot.kill()
 
         # DRAW Group
         for obj in drawable:
